@@ -13,6 +13,8 @@
 
 {$smarty.capture.main_menu_h nofilter}
 
+{$smarty.capture.main_banner_h nofilter}
+
 {if $containers.content}
 <div class="tygh-content clearfix">
     {$containers.content nofilter}
