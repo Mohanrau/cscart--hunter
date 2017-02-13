@@ -67,11 +67,13 @@
                                         {/if}
 
                                         <div class="ty-grid-list__price {if $product.price == 0}ty-grid-list__no-price{/if}">
-                                            {assign var="old_price" value="old_price_`$obj_id`"}
-                                            {if $smarty.capture.$old_price|trim}{$smarty.capture.$old_price nofilter}{/if}
+                                
 
                                             {assign var="price" value="price_`$obj_id`"}
                                             {$smarty.capture.$price nofilter}
+                                            
+                                            {assign var="old_price" value="old_price_`$obj_id`"}
+                                            {if $smarty.capture.$old_price|trim}{$smarty.capture.$old_price nofilter}{/if}
 
                                             {assign var="clean_price" value="clean_price_`$obj_id`"}
                                             {$smarty.capture.$clean_price nofilter}

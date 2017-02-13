@@ -39,6 +39,17 @@ my_design
     font-family: 'icomoon';
 }
 
+/*global*/
+
+a {
+    color: #554c3b;
+}
+
+a:hover {
+    color: #554c3b;
+    text-decoration: underline;
+}
+
 /*header*/
 /*top menu*/
 
@@ -314,6 +325,10 @@ input.ty-search-block__input:focus {
     text-decoration: underline;
 }
 
+.ty-menu__submenu .ty-menu__submenu-items .ty-menu__submenu-item-active a {
+    background-color: #7c9020;
+}
+
 /*main-banner*/
 
 .main-banner--hunter {
@@ -347,9 +362,502 @@ input.ty-search-block__input:focus {
     color: #ffffff;
 }
 
+/*content*/
 /*background texture*/
 
 .tygh-content > div,
 .tygh-content {
     background-image: url(http://localhost/cscart/images/hunter/follow-bacgr.png);
+}
+
+/*title block*/
+
+.ty-mainbox-simple-title {
+    font-family: "PTSerif";
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b8b8b8;
+    color: #554c3b;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ty-mainbox-simple-title:after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid #7c9020;
+    width: 45px;
+    position: absolute;
+    top: 31px;
+}
+
+.ty-owl-controls {
+    margin: -47px 0 0 0;
+}
+
+.ty-icon-left-open-thin,
+.ty-icon-right-open-thin {
+    display: none;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    background: none;
+    background-image: url(http://localhost/cscart/images/hunter/spritesheet--hunter.png);
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 22px;
+    background-position: -63px -52px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+    background: none;
+    background-image: url(http://localhost/cscart/images/hunter/spritesheet--hunter.png);
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 22px;
+    background-position: -10px -52px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    margin: 0 10px 0 0;
+    padding: 0 0 0 0;
+}
+
+/*items*/
+/*hot deals*/
+
+.ty-simple-list .ty-discount-label {
+    top: 0;
+}
+
+.ty-simple-list .ty-discount-label:before {
+    width: 0;
+}
+
+.homepage-hotdeals .owl-item {
+    background: #fff;
+    margin-right: 20px;
+}
+
+@media (min-width: 1224px) {
+    .homepage-hotdeals .owl-item {
+        width: 280px !important;
+    }
+}
+
+.homepage-hotdeals .product-title {
+    color: #787240;
+}
+
+.homepage-hotdeals .product-title:hover {
+    color: #787240;
+    text-decoration: underline;
+}
+
+/*on sale*/
+
+.ty-grid-list__item {
+    background-color: #ffffff;
+    min-height: 370px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.ty-grid-list__image {
+    border: none;
+}
+
+.ty-grid-list__item-name .product-title {
+    color: #554940;
+    min-height: 45px;
+}
+
+.ty-grid-list__item-name .product-title:hover {
+    color: #554940;
+    text-decoration: underline;
+}
+
+.ty-price {
+    margin-right: 10px;
+}
+
+.ty-price-num {
+    font-size: 23px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.ty-list-price .ty-nowrap {
+    font-size: 16px;
+    color: #9b8c73;
+}
+
+.ty-strike {
+    font-size: 16px;
+    color: #9b8c73;
+}
+
+.ty-quick-view-button {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+}
+
+.ty-grid-list__item:hover .ty-quick-view-button {
+    visibility: visible;
+}
+
+.ty-quick-view-button > .ty-btn__secondary {
+    background: #9b8c73;
+    border-radius: 30px;
+}
+
+.ty-quick-view-button > .ty-btn__secondary:hover {
+    background: #554940;
+}
+
+.ty-icon-left-circle:before,
+.ty-icon-right-circle:before {
+    color: #9b8c73;
+}
+
+.ty-icon-left-circle:hover::before,
+.ty-icon-right-circle:hover::before {
+    color: #554940;
+}
+
+.ty-grid-list__price {
+    margin-bottom: 25px;
+}
+
+.ty-btn__add-to-cart {
+    width: 120px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #7c9020;
+    border-radius: 30px;
+}
+
+.ty-btn__add-to-cart:hover {
+    background: #df5900;
+}
+
+.ty-cr-product-button {
+    display: inline-block;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #7c9020;
+}
+
+.ty-cr-product-button:hover {
+    color: #7c9020;
+    text-decoration: underline;
+}
+
+.ty-discount-label {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient (to left top, #fff 50%, #df5900 50%);
+}
+
+.ty-discount-label__item {
+    font-size: 11px;
+    position: absolute;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    top: 12px;
+    left: -17px;
+}
+
+.ty-grid-list__item .ty-discount-label {
+    left: -25px;
+}
+
+/*brands*/
+
+.homepage-our-brands .ty-mainbox-simple-body {
+    background-color: #fff;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 10px 0;
+}
+
+.ty-grayscale {
+    filter: none;
+}
+
+/*blog mini*/
+
+/*rating*/
+
+.ty-caret-bottom {
+    display: none;
+}
+
+.ty-discussion-post {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    position: relative;
+    border: 1px solid #999999;
+}
+
+.ty-discussion-post::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -11px;
+    left: 40px;
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+.ty-discussion-post__message {
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    color: #554c3b;
+}
+
+.ty-discussion-post__message::before {
+    content: '“';
+    font-size: 45px;
+    font-family: "PTSerif";
+    color: #554c3b;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+.ty-discussion-post__author {
+    font-family: "PTSerif";
+    font-size: 14px;
+    line-height: 15px;
+    color: #554c3b;
+}
+
+.ty-stars {
+    color: #9b8c73;
+}
+
+/*stay conecteed*/
+
+.footer-stay-connected {
+    background: none;
+    background-image: url(http://localhost/cscart/images/hunter/follow-bacgr.png);
+}
+
+h3.ty-footer-form-block__title, 
+h3.ty-social-link__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #434343;
+}
+
+input.ty-input-text {
+    background-color: #eeeeec;
+    height: 49px;
+}
+
+.ty-footer-form-block__form {
+    width: 430px;
+}
+
+.ty-btn-go__icon {
+    display: none;
+}
+
+.ty-btn-go {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    background-image: url(http://localhost/cscart/images/hunter/spritesheet--hunter.png);
+    width: 20px;
+    height: 22px;
+    background-position: -116px -55px;
+    background-color: none;
+}
+
+/*social link block*/
+
+.ty-social-link-block {
+    margin-top: 28px;
+}
+
+.ty-social-link a{
+    font-size: 0;
+}
+
+.ty-social-link {
+    margin-right: 0px;
+}
+
+.ty-icon-facebook::before {
+    color: #3b3a2e;
+}
+
+.ty-icon-twitter::before {
+    color: #3b3a2e;
+}
+
+.ty-icon-facebook:hover::before {
+    color: #7c9020;
+}
+
+.ty-icon-twitter:hover::before {
+    color: #7c9020;
+}
+
+/*main footer*/
+
+.ty-footer-grid__full-width.ty-footer-menu {
+    background-image: url(http://localhost/cscart/images/hunter/bacgr--footer.png);
+}
+
+.ty-footer-general__header {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2e2e2e;
+    cursor: default;
+}
+
+.ty-footer-menu__item a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #2e2e2e;
+}
+
+.ty-footer-menu__item a:hover {
+    color: #7c9020;
+}
+
+/*bottom panel*/
+
+.footer-copyright {
+    background-color: #3b3a2e;
+}
+
+.bottom-copyright {
+    color: #f6f4e9;
+}
+
+a.bottom-copyright:hover {
+    color: #7c9020;
+}
+
+.ty-payment-icons__item {
+    opacity: 0.7;
+}
+
+.ty-payment-icons__item:hover {
+    opacity: 1;
+}
+
+/*other pages*/
+/*breadcrmbs*/
+
+.ty-breadcrumbs__a {
+    color: #554940;
+}
+
+.ty-breadcrumbs__a:hover {
+    color: #7c9020;
+}
+
+.ty-breadcrumbs__current {
+    color: #7c9020;
+    font-weight: 600;
+}
+
+/*prod templates*/
+
+.ty-product-block-title {
+    font-size: 23px;
+    color: #212121;
+    text-transform: capitalize;
+}
+
+.ty-control-group__label {
+    font-size: 13px;
+    color: #554940;
+}
+
+.ty-qty-in-stock {
+    font-size: 12px;
+    color: #7c9020;
+}
+
+input.ty-value-changer__input {
+    border-color: #9b8c73;
+    border-radius: 10px;
+    color: #7c9020;
+}
+
+.ty-value-changer__input:focus {
+    border-color: #7c9020;
+}
+
+.ty-value-changer__increase,
+.ty-value-changer__decrease {
+    border-color: #9b8c73;
+    border-radius: 5px;
+    color: #7c9020;
+}
+
+.no-touch .ty-value-changer__increase:hover,
+.no-touch .ty-value-changer__decrease:hover {
+    background: #7c9020;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ty-btn__text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #7c9020;
+}
+
+.ty-btn__text:hover {
+    text-decoration: underline;
+    color: #7c9020;
+}
+
+.ty-tabs__item {
+    background-color: #9b8c73;
+}
+
+.ty-tabs__item.active {
+    background-color: #463a31;
+}
+
+.ty-tabs__a {
+    color: #eeeeee;
+}
+
+/*for phone*/
+
+@media (max-width: 767px) {
+    .ty-grid-list__item:hover {
+    background: #ffffff;
+    }
+}
+
+.ty-icon-short-list:before {
+    color: #9b8c73;
+}
+
+.ty-text-links-btn__arrow::before {
+    color: #ffffff;
+}
+
+.ty-text-links-btn__arrow:hover::before {
+    color: #9b8c73;
 }
